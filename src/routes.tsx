@@ -5,7 +5,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 const { Navigator, Screen } = createStackNavigator();
 
-import SetoresAtendimentoMap from './pages/SetoresAtendimentoMap';
 import OrfanatosMap from './pages/OrfanatosMap';
 import OrfanatoDetails from './pages/OrfanatoDetails';
 import OrfanatoSelectPosition from './pages/OrfanatoCreate/OrfanatoSelectPosition';
@@ -17,11 +16,7 @@ export default function Routes() {
         <NavigationContainer>
             <Navigator 
                 screenOptions={{ headerShown: false, cardStyle: { backgroundColor: '#f2f3f5'}}}
-            >
-                {/* <Screen 
-                    name="SetoresAtendimentoMap" 
-                    component={SetoresAtendimentoMap} 
-                /> */}
+            >                
 
                 <Screen 
                     name="OrfanatosMap" 
